@@ -1,0 +1,7 @@
+// font.c - 自定义图标字模数据
+#include <stdint.h>
+
+// 蓝牙图标：8x8 像素，Adafruit GFX 行格式
+const uint8_t BT_ICON[] = {
+    0x08, 0x2C, 0x1A, 0x0C, 0x1A, 0x2C, 0x08, 0x00
+};
