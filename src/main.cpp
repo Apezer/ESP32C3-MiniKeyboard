@@ -3,6 +3,7 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <BleKeyboard.h>
+#include "font.h"
 
 // OLED 引脚与地址
 #define OLED_SDA 6
@@ -27,9 +28,6 @@ const char KEY_CHARS[NUM_KEYS] = {'z', 'x', 'c', 'v', 'b'};
 bool keyState[NUM_KEYS] = {false};
 bool lastReportedState[NUM_KEYS] = {false};
 unsigned long lastChangeTime[NUM_KEYS] = {0};
-
-// 蓝牙图标字模（外部定义）
-extern const uint8_t BT_ICON[];
 
 // BLE 键盘实例
 BleKeyboard bleKeyboard("MiniKey", "Apezer", 100);
